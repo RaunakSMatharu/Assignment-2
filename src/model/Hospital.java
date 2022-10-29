@@ -8,10 +8,12 @@ package model;
  *
  * @author Raunak Singh Matharu
  */
+
 public class Hospital {
     private String Hospital_Name;
     private String Hospital_City;
     private int Hospital_pincode;
+        
     public String getHospital_Name() {
         return Hospital_Name;
     }

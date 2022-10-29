@@ -58,13 +58,16 @@ public class Patient_Directory extends javax.swing.JFrame {
         Btn_back_main = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Patient Directory ");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 0, 565, -1));
 
         jTextField1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField1.setText("Name");
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 280, 110, -1));
 
         jTextField2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField2.setText("UID");
@@ -73,18 +76,21 @@ public class Patient_Directory extends javax.swing.JFrame {
                 jTextField2ActionPerformed(evt);
             }
         });
+        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 310, 110, -1));
 
         Text_Patient_Name.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Text_Patient_NameActionPerformed(evt);
             }
         });
+        getContentPane().add(Text_Patient_Name, new org.netbeans.lib.awtextra.AbsoluteConstraints(227, 276, 300, -1));
 
         Text_Patient_UID.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Text_Patient_UIDActionPerformed(evt);
             }
         });
+        getContentPane().add(Text_Patient_UID, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 310, 300, -1));
 
         jTextField5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField5.setText("Gender");
@@ -93,6 +99,7 @@ public class Patient_Directory extends javax.swing.JFrame {
                 jTextField5ActionPerformed(evt);
             }
         });
+        getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(381, 338, -1, -1));
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
@@ -100,9 +107,12 @@ public class Patient_Directory extends javax.swing.JFrame {
                 jComboBox1ActionPerformed(evt);
             }
         });
+        getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(451, 338, 80, -1));
 
         jTextField6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField6.setText("Age");
+        getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(103, 339, 110, -1));
+        getContentPane().add(Text_Pateint_age, new org.netbeans.lib.awtextra.AbsoluteConstraints(227, 339, 150, -1));
 
         jTextField8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField8.setText("Cell No");
@@ -111,21 +121,27 @@ public class Patient_Directory extends javax.swing.JFrame {
                 jTextField8ActionPerformed(evt);
             }
         });
+        getContentPane().add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(103, 368, 110, -1));
+        getContentPane().add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(231, 368, 300, -1));
 
         jTextField10.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField10.setText("Email");
+        getContentPane().add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(103, 398, 110, -1));
 
         jTextField11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField11ActionPerformed(evt);
             }
         });
+        getContentPane().add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(231, 398, 300, -1));
 
         jTextField12.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField12.setText("Vital Sign");
+        jTextField12.setText("Patient Temp");
+        getContentPane().add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(103, 428, 110, -1));
 
         jTextField13.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField13.setText("City");
+        getContentPane().add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 460, 110, -1));
 
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "New York", "Boston ", "Florida ", "California ", "Los Angeles", "Chicago", "Washington", "Las Vegas" }));
         jComboBox2.addActionListener(new java.awt.event.ActionListener() {
@@ -133,6 +149,9 @@ public class Patient_Directory extends javax.swing.JFrame {
                 jComboBox2ActionPerformed(evt);
             }
         });
+        getContentPane().add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 460, 100, -1));
+        getContentPane().add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 460, 190, -1));
+        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(231, 428, 100, -1));
 
         jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "A+", "A_", "B+", "B-", "O+", "O-", "AB+", "AB-" }));
         jComboBox3.addActionListener(new java.awt.event.ActionListener() {
@@ -140,17 +159,24 @@ public class Patient_Directory extends javax.swing.JFrame {
                 jComboBox3ActionPerformed(evt);
             }
         });
+        getContentPane().add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 490, 100, -1));
 
         jTextField4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField4.setText("Blood Group");
+        getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 490, 110, -1));
 
         jButton1.setText("Create");
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(551, 278, -1, -1));
 
         jButton2.setText("View");
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(551, 328, -1, -1));
+        getContentPane().add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 490, 190, -1));
 
         jButton3.setText("Update");
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(551, 378, -1, -1));
 
         jButton4.setText("Delete");
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(551, 428, -1, -1));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -186,9 +212,13 @@ public class Patient_Directory extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(jTable1);
 
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 50, 640, 210));
+
         jButton5.setText("Hospital Visiting");
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 520, -1, -1));
 
         jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        getContentPane().add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 520, 300, -1));
 
         Btn_back_main.setText("Back");
         Btn_back_main.addActionListener(new java.awt.event.ActionListener() {
@@ -196,156 +226,7 @@ public class Patient_Directory extends javax.swing.JFrame {
                 Btn_back_mainActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(466, Short.MAX_VALUE)
-                .addComponent(Btn_back_main)
-                .addGap(36, 36, 36))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 565, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(14, 14, 14)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 560, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(16, 16, 16)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(14, 14, 14)
-                            .addComponent(Text_Patient_Name, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(24, 24, 24)
-                            .addComponent(jButton1))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(16, 16, 16)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(14, 14, 14)
-                            .addComponent(Text_Patient_UID, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(16, 16, 16)
-                            .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(14, 14, 14)
-                            .addComponent(Text_Pateint_age, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(4, 4, 4)
-                            .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(6, 6, 6)
-                            .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(20, 20, 20)
-                            .addComponent(jButton2))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(16, 16, 16)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGap(18, 18, 18)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGap(20, 20, 20)
-                            .addComponent(jButton3))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(16, 16, 16)
-                            .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(18, 18, 18)
-                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(20, 20, 20)
-                            .addComponent(jButton4))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(16, 16, 16)
-                            .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(16, 16, 16)
-                            .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(12, 12, 12)
-                            .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(16, 16, 16)
-                            .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(16, 16, 16)
-                            .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(12, 12, 12)
-                            .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(14, 14, 14)
-                            .addComponent(jButton5)
-                            .addGap(14, 14, 14)
-                            .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 543, Short.MAX_VALUE)
-                .addComponent(Btn_back_main))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 24, Short.MAX_VALUE)
-                    .addComponent(jLabel1)
-                    .addGap(2, 2, 2)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(8, 8, 8)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(Text_Patient_Name, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(2, 2, 2)
-                            .addComponent(jButton1)))
-                    .addGap(4, 4, 4)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(Text_Patient_UID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(1, 1, 1)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(11, 11, 11)
-                            .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(11, 11, 11)
-                            .addComponent(Text_Pateint_age, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(10, 10, 10)
-                            .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(10, 10, 10)
-                            .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addComponent(jButton2))
-                    .addGap(7, 7, 7)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(8, 8, 8)
-                            .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(8, 8, 8)
-                            .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(10, 10, 10)
-                            .addComponent(jButton3)))
-                    .addGap(8, 8, 8)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton4))
-                    .addGap(7, 7, 7)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(8, 8, 8)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(8, 8, 8)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jButton5)
-                        .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(0, 25, Short.MAX_VALUE)))
-        );
+        getContentPane().add(Btn_back_main, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 620, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -461,4 +342,8 @@ public class Patient_Directory extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
     // End of variables declaration//GEN-END:variables
+
+    void setComponentOrientation(boolean b) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }

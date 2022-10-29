@@ -4,10 +4,15 @@
  */
 package model;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Raunak Singh Matharu
  */
+
 public class Doctor_History {
+    private ArrayList<Doctor> Doctor_List;
     
+     
 }

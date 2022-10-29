@@ -11,6 +11,7 @@ import javax.swing.Icon;
  * @author Raunak Singh Matharu
  */
 public class Doctor {
+    
     private String Doctor_Name;
     private int Doctor_ID;
     private int Doctor_age;

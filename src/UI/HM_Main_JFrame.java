@@ -4,6 +4,9 @@
  */
 package UI;
 
+import javax.swing.JOptionPane;
+import model.Person_History;
+import model.Person;
 /**
  *
  * @author Raunak Singh Matharu
@@ -13,8 +16,12 @@ public class HM_Main_JFrame extends javax.swing.JFrame {
     /**
      * Creates new form NewJFrame
      */
+    Person_History person_List;
+    
+    
     public HM_Main_JFrame() {
         initComponents();
+        person_List = new Person_History();
     }
 
     /**
@@ -27,117 +34,94 @@ public class HM_Main_JFrame extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jPanel4 = new javax.swing.JPanel();
+        Panel_Hospital_Main = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        Btn_main_System_Admin = new javax.swing.JButton();
-        Btn_Main_Doctor = new javax.swing.JButton();
-        Btn_Main_Patient = new javax.swing.JButton();
-        Btn_Main_Community_Admin = new javax.swing.JButton();
-        Btn_Main_Hospital_Admin = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        Txt_Admin_Username = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+        Txt_Admin_Password = new javax.swing.JPasswordField();
+        Btn_System_Admin_Login = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
+        Role_Combo_Box = new javax.swing.JComboBox<>();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel1.setLayout(new java.awt.CardLayout());
+
+        Panel_Hospital_Main.setBackground(new java.awt.Color(255, 51, 51));
+        Panel_Hospital_Main.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel4.setFont(new java.awt.Font("Segoe UI Black", 1, 24)); // NOI18N
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("Welcome To Hospital Management System ");
+        Panel_Hospital_Main.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 6, 565, 59));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Please Select Your Role ");
+        Panel_Hospital_Main.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(57, 71, 458, 39));
 
-        Btn_main_System_Admin.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        Btn_main_System_Admin.setText("System Admin");
-        Btn_main_System_Admin.addActionListener(new java.awt.event.ActionListener() {
+        jLabel2.setFont(new java.awt.Font("Segoe UI Semibold", 0, 12)); // NOI18N
+        jLabel2.setText("User Name");
+        Panel_Hospital_Main.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(106, 158, 70, -1));
+
+        Txt_Admin_Username.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Btn_main_System_AdminActionPerformed(evt);
+                Txt_Admin_UsernameActionPerformed(evt);
             }
         });
-
-        Btn_Main_Doctor.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        Btn_Main_Doctor.setText("Doctor ");
-        Btn_Main_Doctor.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Btn_Main_DoctorActionPerformed(evt);
+        Txt_Admin_Username.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                Txt_Admin_UsernameKeyPressed(evt);
             }
         });
+        Panel_Hospital_Main.add(Txt_Admin_Username, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 155, 160, -1));
 
-        Btn_Main_Patient.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        Btn_Main_Patient.setText("Patient");
-        Btn_Main_Patient.addActionListener(new java.awt.event.ActionListener() {
+        jLabel3.setText("Password");
+        Panel_Hospital_Main.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(106, 201, 78, -1));
+
+        Txt_Admin_Password.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Btn_Main_PatientActionPerformed(evt);
+                Txt_Admin_PasswordActionPerformed(evt);
             }
         });
+        Panel_Hospital_Main.add(Txt_Admin_Password, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 190, 160, -1));
 
-        Btn_Main_Community_Admin.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        Btn_Main_Community_Admin.setText("Community Admin");
-        Btn_Main_Community_Admin.addActionListener(new java.awt.event.ActionListener() {
+        Btn_System_Admin_Login.setText("Login");
+        Btn_System_Admin_Login.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Btn_Main_Community_AdminActionPerformed(evt);
+                Btn_System_Admin_LoginActionPerformed(evt);
             }
         });
+        Panel_Hospital_Main.add(Btn_System_Admin_Login, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 270, -1, -1));
 
-        Btn_Main_Hospital_Admin.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        Btn_Main_Hospital_Admin.setText("Hospital Admin");
-        Btn_Main_Hospital_Admin.addActionListener(new java.awt.event.ActionListener() {
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel5.setText("                          For Staff");
+        Panel_Hospital_Main.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, 352, 54));
+
+        Role_Combo_Box.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Please Select Your Role", "System Admin", "Doctor", "Community Admin", "Hospital Admin", " " }));
+        Role_Combo_Box.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Btn_Main_Hospital_AdminActionPerformed(evt);
+                Role_Combo_BoxActionPerformed(evt);
             }
         });
+        Panel_Hospital_Main.add(Role_Combo_Box, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 230, 160, -1));
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 571, Short.MAX_VALUE)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(209, 209, 209)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Btn_Main_Doctor, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Btn_main_System_Admin, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Btn_Main_Patient, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Btn_Main_Community_Admin)
-                            .addComponent(Btn_Main_Hospital_Admin, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 458, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
-                .addGap(18, 18, 18)
-                .addComponent(Btn_main_System_Admin, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(Btn_Main_Doctor, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(Btn_Main_Patient, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(Btn_Main_Community_Admin, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(Btn_Main_Hospital_Admin, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(17, 17, 17))
-        );
+        jLabel6.setText("Role");
+        Panel_Hospital_Main.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 236, 70, 20));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
+        jLabel7.setText("For Patient");
+        Panel_Hospital_Main.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 320, -1, -1));
+
+        jButton1.setText("Patient");
+        Panel_Hospital_Main.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 320, -1, -1));
+
+        jPanel1.add(Panel_Hospital_Main, "card2");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -153,35 +137,45 @@ public class HM_Main_JFrame extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void Btn_main_System_AdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_main_System_AdminActionPerformed
+    private void Txt_Admin_UsernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Txt_Admin_UsernameActionPerformed
         // TODO add your handling code here:
-        Login_Admin_System ad = new Login_Admin_System();
-        ad.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_Btn_main_System_AdminActionPerformed
+    }//GEN-LAST:event_Txt_Admin_UsernameActionPerformed
 
-    private void Btn_Main_DoctorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_Main_DoctorActionPerformed
+    private void Txt_Admin_UsernameKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_Txt_Admin_UsernameKeyPressed
         // TODO add your handling code here:
-        Login_Doctor d = new Login_Doctor();
-        d.setVisible(true);
-        dispose();
+    }//GEN-LAST:event_Txt_Admin_UsernameKeyPressed
+
+    private void Txt_Admin_PasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Txt_Admin_PasswordActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Txt_Admin_PasswordActionPerformed
+
+    private void Btn_System_Admin_LoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_System_Admin_LoginActionPerformed
+        // TODO add your handling code here:
+        String x =Txt_Admin_Username.getText();
+        String y =Txt_Admin_Password.getText();
+        String z =Role_Combo_Box.getSelectedItem().toString();
+        if(x.equalsIgnoreCase("Admin")&&y.equalsIgnoreCase("12345")&&z.equalsIgnoreCase("System Admin"))
+        {
+            System_Admin pd =new System_Admin();
+            pd.setVisible(true);
+        }
+        else if(x.equalsIgnoreCase("Doctor")&&y.equalsIgnoreCase("12345")&&z.equalsIgnoreCase("Doctor")){
+            Patient_Directory pd =new Patient_Directory();
+            pd.setVisible(true);
+        }
         
-    }//GEN-LAST:event_Btn_Main_DoctorActionPerformed
+        else if(x.equalsIgnoreCase("Hospital")&&y.equalsIgnoreCase("12345")&&z.equalsIgnoreCase("Hospital Admin")){
+            Patient_Directory pd =new Patient_Directory();
+            pd.setVisible(true);
+        }
+        else{
+            JOptionPane.showMessageDialog(null, "login unsucessfull");
+        }
+    }//GEN-LAST:event_Btn_System_Admin_LoginActionPerformed
 
-    private void Btn_Main_PatientActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_Main_PatientActionPerformed
+    private void Role_Combo_BoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Role_Combo_BoxActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Btn_Main_PatientActionPerformed
-
-    private void Btn_Main_Community_AdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_Main_Community_AdminActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Btn_Main_Community_AdminActionPerformed
-
-    private void Btn_Main_Hospital_AdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_Main_Hospital_AdminActionPerformed
-        // TODO add your handling code here:
-        Login_Hospital lh = new Login_Hospital();
-        lh.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_Btn_Main_Hospital_AdminActionPerformed
+    }//GEN-LAST:event_Role_Combo_BoxActionPerformed
 
     /**
      * @param args the command line arguments
@@ -220,14 +214,19 @@ public class HM_Main_JFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Btn_Main_Community_Admin;
-    private javax.swing.JButton Btn_Main_Doctor;
-    private javax.swing.JButton Btn_Main_Hospital_Admin;
-    private javax.swing.JButton Btn_Main_Patient;
-    private javax.swing.JButton Btn_main_System_Admin;
+    private javax.swing.JButton Btn_System_Admin_Login;
+    private javax.swing.JPanel Panel_Hospital_Main;
+    private javax.swing.JComboBox<String> Role_Combo_Box;
+    private javax.swing.JPasswordField Txt_Admin_Password;
+    private javax.swing.JTextField Txt_Admin_Username;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel4;
     // End of variables declaration//GEN-END:variables
 }

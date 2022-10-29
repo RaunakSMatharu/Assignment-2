@@ -4,10 +4,12 @@
  */
 package model;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Raunak Singh Matharu
  */
 public class Patient_History {
-    
+    private ArrayList<Patient> patient_list;
 }
