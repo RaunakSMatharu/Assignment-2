@@ -370,7 +370,7 @@ public class Person_Directory extends javax.swing.JFrame {
 
     private void Btn_back_mainActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_back_mainActionPerformed
         // TODO add your handling code here:
-        HM_Main_JFrame sa = new HM_Main_JFrame();
+        HM_Main sa = new HM_Main();
         sa.setVisible(true);
         dispose();
     }//GEN-LAST:event_Btn_back_mainActionPerformed

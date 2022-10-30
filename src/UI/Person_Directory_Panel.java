@@ -4,17 +4,20 @@
  */
 package UI;
 
+import model.Person_History;
+
 /**
  *
  * @author Raunak Singh Matharu
  */
 public class Person_Directory_Panel extends javax.swing.JPanel {
-
+    //Person_History person_List;
     /**
      * Creates new form Person_Directory_Panel
      */
     public Person_Directory_Panel() {
         initComponents();
+       //this.person_List = person_List;
     }
 
     /**
