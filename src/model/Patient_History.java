@@ -28,7 +28,7 @@ public class Patient_History {
     }
     
     
-    public void deletePatientInfo(Person p){
+    public void deletePatientInfo(Individual p){
         
         patient_list.remove(p);
     
