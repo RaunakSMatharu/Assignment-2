@@ -22,7 +22,7 @@ public class Hospital_History {
     }
 
     public Hospital_History() {
-        this.Hospital_List = Hospital_List;
+        this.Hospital_List = new ArrayList<Hospital>(); 
     }
     
     public Hospital addnewHospitalDetails(){

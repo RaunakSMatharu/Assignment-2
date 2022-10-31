@@ -27,6 +27,9 @@ public class Doctor {
     public void setDoctor_ID(int Doctor_ID) {
         this.Doctor_ID = Doctor_ID;
     }
-   
+   @Override
+   public String toString(){
+       return Doctor_Name;
     
+}
 }

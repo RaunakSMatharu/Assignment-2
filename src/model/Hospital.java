@@ -36,5 +36,8 @@ public class Hospital {
     public void setHospital_Pincode(String Hospital_Pincode) {
         this.Hospital_Pincode = Hospital_Pincode;
     }
-   
+   @Override
+   public String toString(){
+       return Hospital_Name;
+}
 }
