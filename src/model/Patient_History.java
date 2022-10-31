@@ -11,28 +11,30 @@ import java.util.ArrayList;
  * @author Raunak Singh Matharu
  */
 public class Patient_History {
-    private ArrayList<Patient> patient_list;
-
-    public ArrayList<Patient> getPatient_list() {
-        return patient_list;
+    private ArrayList<Patient> Patient_List;
+    public Patient_History(){
+        
+        this.Patient_List = new ArrayList<Patient>();
+    
     }
 
-    public void setPatient_list(ArrayList<Patient> patient_list) {
-        this.patient_list = patient_list;
+    public ArrayList<Patient> getPatient_List() {
+        return Patient_List;
+    }
+
+    public void setPatient_List(ArrayList<Patient> Patient_List) {
+        this.Patient_List = Patient_List;
     }
     
     public Patient addnewDetails(){
     Patient newDetails = new Patient();
-    patient_list.add(newDetails);
+    Patient_List.add(newDetails);
     return newDetails;
     }
     
-    
-    public void deletePatientInfo(Individual p){
+    public void deletePatientInfo(Patient ei){
         
-        patient_list.remove(p);
+        Patient_List.remove(ei);
     
-        
-    }
-     
+}
 }

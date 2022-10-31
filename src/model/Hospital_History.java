@@ -4,10 +4,36 @@
  */
 package model;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Raunak Singh Matharu
  */
 public class Hospital_History {
+    private ArrayList<Hospital> Hospital_List;
+
+    public ArrayList<Hospital> getHospital_List() {
+        return Hospital_List;
+    }
+
+    public void setHospital_List(ArrayList<Hospital> Hospital_List) {
+        this.Hospital_List = Hospital_List;
+    }
+
+    public Hospital_History() {
+        this.Hospital_List = Hospital_List;
+    }
+    
+    public Hospital addnewHospitalDetails(){
+        Hospital newHospitalDetails = new Hospital();
+        Hospital_List.add(newHospitalDetails);
+        return newHospitalDetails;
+        }
+    
+    
+    public void deleteHospitalInfo(Hospital ei){
+    Hospital_List.remove(ei);
+    } 
     
 }

@@ -8,12 +8,11 @@ package model;
  *
  * @author Raunak Singh Matharu
  */
-
 public class Hospital {
     private String Hospital_Name;
     private String Hospital_City;
-    private int Hospital_pincode;
-        
+    private String Hospital_Pincode;
+
     public String getHospital_Name() {
         return Hospital_Name;
     }
@@ -30,12 +29,12 @@ public class Hospital {
         this.Hospital_City = Hospital_City;
     }
 
-    public int getHospital_pincode() {
-        return Hospital_pincode;
+    public String getHospital_Pincode() {
+        return Hospital_Pincode;
     }
 
-    public void setHospital_pincode(int Hospital_pincode) {
-        this.Hospital_pincode = Hospital_pincode;
+    public void setHospital_Pincode(String Hospital_Pincode) {
+        this.Hospital_Pincode = Hospital_Pincode;
     }
-    
+   
 }

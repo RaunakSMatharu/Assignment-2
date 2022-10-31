@@ -9,15 +9,14 @@ package model;
  * @author Raunak Singh Matharu
  */
 public class Individual {
-    private String Individual_Name;
-    private int Individual_ID;
-    private int Individual_Age;
-    private String Individual_Gender;
-    private String Individual_CellNo;
-    private String Individual_Email;
-    private String Individual_City;
-    private String Individual_Blood;
-    private String Individual_Hospital_Visiting;
+   private String Individual_Name;
+   private String Individual_ID;
+   private int Individual_age;
+   private String Individual_Gender;
+   private String Individual_Email;
+   private String Individual_City;
+   private String Individual_Cell;
+   private String Individual_Hospital_Visit;
 
     public String getIndividual_Name() {
         return Individual_Name;
@@ -27,20 +26,20 @@ public class Individual {
         this.Individual_Name = Individual_Name;
     }
 
-    public int getIndividual_ID() {
+    public String getIndividual_ID() {
         return Individual_ID;
     }
 
-    public void setIndividual_ID(int Individual_ID) {
+    public void setIndividual_ID(String Individual_ID) {
         this.Individual_ID = Individual_ID;
     }
 
-    public int getIndividual_Age() {
-        return Individual_Age;
+    public int getIndividual_age() {
+        return Individual_age;
     }
 
-    public void setIndividual_Age(int Individual_Age) {
-        this.Individual_Age = Individual_Age;
+    public void setIndividual_age(int Individual_age) {
+        this.Individual_age = Individual_age;
     }
 
     public String getIndividual_Gender() {
@@ -49,14 +48,6 @@ public class Individual {
 
     public void setIndividual_Gender(String Individual_Gender) {
         this.Individual_Gender = Individual_Gender;
-    }
-
-    public String getIndividual_CellNo() {
-        return Individual_CellNo;
-    }
-
-    public void setIndividual_CellNo(String Individual_CellNo) {
-        this.Individual_CellNo = Individual_CellNo;
     }
 
     public String getIndividual_Email() {
@@ -75,22 +66,21 @@ public class Individual {
         this.Individual_City = Individual_City;
     }
 
-    public String getIndividual_Blood() {
-        return Individual_Blood;
+    public String getIndividual_Cell() {
+        return Individual_Cell;
     }
 
-    public void setIndividual_Blood(String Individual_Blood) {
-        this.Individual_Blood = Individual_Blood;
+    public void setIndividual_Cell(String Individual_Cell) {
+        this.Individual_Cell = Individual_Cell;
     }
 
-    public String getIndividual_Hospital_Visiting() {
-        return Individual_Hospital_Visiting;
+    public String getIndividual_Hospital_Visit() {
+        return Individual_Hospital_Visit;
     }
 
-    public void setIndividual_Hospital_Visiting(String Individual_Hospital_Visiting) {
-        this.Individual_Hospital_Visiting = Individual_Hospital_Visiting;
+    public void setIndividual_Hospital_Visit(String Individual_Hospital_Visit) {
+        this.Individual_Hospital_Visit = Individual_Hospital_Visit;
     }
-
-     
+   
     
 }
