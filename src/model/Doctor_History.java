@@ -30,8 +30,11 @@ public class Doctor_History {
         return newDoctorDetails;
         }
     public void deleteDoctorInfo(Doctor ei){
-        
     Doctor_List.remove(ei);
-    
-}  
+    }
+     
+    public void UpdateDoctorInfo(int index,Doctor doctor){
+        Doctor_List.set(index,doctor);
+    }
 }
+

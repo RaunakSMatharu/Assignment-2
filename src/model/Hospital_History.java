@@ -35,5 +35,8 @@ public class Hospital_History {
     public void deleteHospitalInfo(Hospital ei){
     Hospital_List.remove(ei);
     } 
+    public void UpdateHospitalInfo(int index,Hospital hospital){
+        Hospital_List.set(index,hospital);
+    }
     
 }

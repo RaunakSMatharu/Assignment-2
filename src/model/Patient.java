@@ -4,6 +4,8 @@
  */
 package model;
 
+import java.util.Date;
+
 /**
  *
  * @author Raunak Singh Matharu
@@ -19,6 +21,27 @@ public class Patient {
     private String Patient_Hospital_Visit;
     private String Patient_Temp;
     private String Patient_Blood_Group;
+    private Date Patient_Appointment;
+    private String Patient_Blood_Pressure;
+
+    public Date getPatient_Appointment() {
+        return Patient_Appointment;
+    }
+
+    public void setPatient_Appointment(Date Patient_Appointment) {
+        this.Patient_Appointment = Patient_Appointment;
+    }
+
+
+
+
+    public String getPatient_Blood_Pressure() {
+        return Patient_Blood_Pressure;
+    }
+
+    public void setPatient_Blood_Pressure(String Patient_Blood_Pressure) {
+        this.Patient_Blood_Pressure = Patient_Blood_Pressure;
+    }
 
     public String getPatient_Name() {
         return Patient_Name;

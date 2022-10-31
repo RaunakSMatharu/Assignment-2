@@ -37,4 +37,14 @@ public class Patient_History {
         Patient_List.remove(ei);
     
 }
+//    public void UpdatePatientInfo(int index,Patient patient){
+//        Patient_List.set(index,patient);
+//    }
+    
+     public void UpdatePatientVitalsInfo(Patient pv, int index){
+        
+       Patient_List.set(index, pv);
+    }
+    
+    
 }
