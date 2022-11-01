@@ -23,6 +23,15 @@ public class Patient {
     private String Patient_Blood_Group;
     private Date Patient_Appointment;
     private String Patient_Blood_Pressure;
+    private String Patient_Pulse;
+
+    public String getPatient_Pulse() {
+        return Patient_Pulse;
+    }
+
+    public void setPatient_Pulse(String Patient_Pulse) {
+        this.Patient_Pulse = Patient_Pulse;
+    }
 
     public Date getPatient_Appointment() {
         return Patient_Appointment;
