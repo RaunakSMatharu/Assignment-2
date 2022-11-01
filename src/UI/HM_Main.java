@@ -100,6 +100,8 @@ public class HM_Main extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
+        jScrollPane9 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
         SA_Add_Patient_Panel = new javax.swing.JPanel();
         SA_Add_atient_back = new javax.swing.JButton();
         jScrollPane5 = new javax.swing.JScrollPane();
@@ -135,7 +137,6 @@ public class HM_Main extends javax.swing.JFrame {
         Btn_Sys_Admin_Hospital = new javax.swing.JButton();
         Btn_Logout = new javax.swing.JButton();
         Btn_Sys_Admin_Patient_Add = new javax.swing.JButton();
-        jPanel2 = new javax.swing.JPanel();
         SA_Patient_Panel = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         Text_SA_Patient_Name = new javax.swing.JTextField();
@@ -632,15 +633,25 @@ public class HM_Main extends javax.swing.JFrame {
 
         jButton4.setText("Update");
 
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null}
+            },
+            new String [] {
+                "City", "Community", "Hospital"
+            }
+        ));
+        jScrollPane9.setViewportView(jTable1);
+
         javax.swing.GroupLayout Community_AdminLayout = new javax.swing.GroupLayout(Community_Admin);
         Community_Admin.setLayout(Community_AdminLayout);
         Community_AdminLayout.setHorizontalGroup(
             Community_AdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Community_AdminLayout.createSequentialGroup()
                 .addGroup(Community_AdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(Community_AdminLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel49, javax.swing.GroupLayout.PREFERRED_SIZE, 716, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(Community_AdminLayout.createSequentialGroup()
                         .addGroup(Community_AdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(Community_AdminLayout.createSequentialGroup()
@@ -671,24 +682,30 @@ public class HM_Main extends javax.swing.JFrame {
                             .addComponent(jButton1)
                             .addComponent(jButton4)
                             .addComponent(jButton2)
-                            .addComponent(CA_main_BAck_Btn))))
+                            .addComponent(CA_main_BAck_Btn)))
+                    .addGroup(Community_AdminLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(Community_AdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel49, javax.swing.GroupLayout.PREFERRED_SIZE, 716, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 635, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(139, Short.MAX_VALUE))
         );
         Community_AdminLayout.setVerticalGroup(
             Community_AdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Community_AdminLayout.createSequentialGroup()
+                .addComponent(jLabel49, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(Community_AdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(Community_AdminLayout.createSequentialGroup()
-                        .addGap(61, 61, 61)
-                        .addComponent(jLabel49, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(134, 134, 134)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(Community_AdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel75)
                             .addComponent(CA_PAtient_Combo_City3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(Txt_CA_Add_City, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Community_AdminLayout.createSequentialGroup()
-                        .addContainerGap()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(Community_AdminLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jButton1)
                         .addGap(3, 3, 3)))
                 .addGroup(Community_AdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -707,7 +724,7 @@ public class HM_Main extends javax.swing.JFrame {
                 .addComponent(jButton4)
                 .addGap(45, 45, 45)
                 .addComponent(CA_main_BAck_Btn)
-                .addContainerGap(122, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         HM_Main_Panel.add(Community_Admin, "card14");
@@ -1065,19 +1082,6 @@ public class HM_Main extends javax.swing.JFrame {
 
         HM_Main_Panel.add(System_Admin_Main, "card6");
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-
-        HM_Main_Panel.add(jPanel2, "card15");
-
         SA_Patient_Panel.setBackground(new java.awt.Color(255, 153, 0));
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
@@ -1089,10 +1093,20 @@ public class HM_Main extends javax.swing.JFrame {
                 Text_SA_Patient_NameActionPerformed(evt);
             }
         });
+        Text_SA_Patient_Name.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                Text_SA_Patient_NameKeyPressed(evt);
+            }
+        });
 
         Text_SA_Patient_UID.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Text_SA_Patient_UIDActionPerformed(evt);
+            }
+        });
+        Text_SA_Patient_UID.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                Text_SA_Patient_UIDKeyPressed(evt);
             }
         });
 
@@ -1169,6 +1183,12 @@ public class HM_Main extends javax.swing.JFrame {
         Btn_back_main.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Btn_back_mainActionPerformed(evt);
+            }
+        });
+
+        Txt_SA_Patient_CellNo.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                Txt_SA_Patient_CellNoKeyPressed(evt);
             }
         });
 
@@ -1395,9 +1415,26 @@ public class HM_Main extends javax.swing.JFrame {
             }
         });
 
+        Txt_SA_Doctor_ID.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                Txt_SA_Doctor_IDKeyPressed(evt);
+            }
+        });
+
         Txt_SA_Doctor_Age.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Txt_SA_Doctor_AgeActionPerformed(evt);
+            }
+        });
+        Txt_SA_Doctor_Age.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                Txt_SA_Doctor_AgeKeyPressed(evt);
+            }
+        });
+
+        Txt_SA_Doctor_Phone.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                Txt_SA_Doctor_PhoneKeyPressed(evt);
             }
         });
 
@@ -1464,6 +1501,12 @@ public class HM_Main extends javax.swing.JFrame {
             }
         });
 
+        Txt_SA_Doctor_Name.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                Txt_SA_Doctor_NameKeyPressed(evt);
+            }
+        });
+
         Txt_SA_Doctor_Gender.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Txt_SA_Doctor_GenderActionPerformed(evt);
@@ -1514,11 +1557,7 @@ public class HM_Main extends javax.swing.JFrame {
                                                     .addComponent(Txt_SA_Doctor_Hospital_Associated)
                                                     .addComponent(Txt_SA_Doctor_City)))
                                             .addGroup(SA_Doctor_PanelLayout.createSequentialGroup()
-                                                .addGap(142, 142, 142)
-                                                .addComponent(jLabel20)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(jComboBox8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(18, 18, 18)
+                                                .addGap(282, 282, 282)
                                                 .addComponent(Txt_SA_Doctor_Gender, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                         .addGap(4, 4, 4))
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SA_Doctor_PanelLayout.createSequentialGroup()
@@ -1543,7 +1582,12 @@ public class HM_Main extends javax.swing.JFrame {
                                 .addComponent(jLabel16)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(SA_Doctor_PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(Txt_SA_Doctor_Age, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(SA_Doctor_PanelLayout.createSequentialGroup()
+                                        .addComponent(Txt_SA_Doctor_Age, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jLabel20)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(jComboBox8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addComponent(Txt_SA_Doctor_Phone, javax.swing.GroupLayout.PREFERRED_SIZE, 340, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGap(24, 24, 24)
                         .addGroup(SA_Doctor_PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -1885,6 +1929,11 @@ public class HM_Main extends javax.swing.JFrame {
         Txt_SA_Hospital_Pincode.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Txt_SA_Hospital_PincodeActionPerformed(evt);
+            }
+        });
+        Txt_SA_Hospital_Pincode.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                Txt_SA_Hospital_PincodeKeyPressed(evt);
             }
         });
 
@@ -3783,7 +3832,98 @@ public class HM_Main extends javax.swing.JFrame {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
-      
+
+    private void Text_SA_Patient_NameKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_Text_SA_Patient_NameKeyPressed
+        // TODO add your handling code here:
+        char c = evt.getKeyChar();
+        if(Character.isLetter(c) || Character.isWhitespace(c)||Character.isISOControl(c)||Character.isSpaceChar(c))
+        {
+            Text_SA_Patient_Name.setEditable(true);
+        }
+        else{
+            Text_SA_Patient_Name.setEditable(false);
+    }//GEN-LAST:event_Text_SA_Patient_NameKeyPressed
+    
+}
+    private void Text_SA_Patient_UIDKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_Text_SA_Patient_UIDKeyPressed
+        // TODO add your handling code here:
+        char c = evt.getKeyChar();
+        if(Character.isDigit(c)||Character.isISOControl(c)){
+            Text_SA_Patient_UID.setEditable(true);
+        }
+        else{
+            Text_SA_Patient_UID.setEditable(false);
+        }
+    }//GEN-LAST:event_Text_SA_Patient_UIDKeyPressed
+
+    private void Txt_SA_Patient_CellNoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_Txt_SA_Patient_CellNoKeyPressed
+        // TODO add your handling code here:
+        char c = evt.getKeyChar();
+        if(Character.isDigit(c)||Character.isISOControl(c)){
+            Txt_SA_Patient_CellNo.setEditable(true);
+        }
+        else{
+            Txt_SA_Patient_CellNo.setEditable(false);
+        }
+    }//GEN-LAST:event_Txt_SA_Patient_CellNoKeyPressed
+
+    private void Txt_SA_Doctor_NameKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_Txt_SA_Doctor_NameKeyPressed
+        // TODO add your handling code here:
+        char c = evt.getKeyChar();
+        if(Character.isLetter(c) || Character.isWhitespace(c)||Character.isISOControl(c)||Character.isSpaceChar(c))
+        {
+            Txt_SA_Doctor_Name.setEditable(true);
+        }
+        else{
+            Txt_SA_Doctor_Name.setEditable(false);
+        }
+    }//GEN-LAST:event_Txt_SA_Doctor_NameKeyPressed
+    
+    private void Txt_SA_Doctor_IDKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_Txt_SA_Doctor_IDKeyPressed
+        // TODO add your handling code here:
+        
+       char c = evt.getKeyChar();
+        if(Character.isDigit(c)||Character.isISOControl(c)){
+           Txt_SA_Doctor_ID.setEditable(true);
+        }
+        else{
+            Txt_SA_Doctor_ID.setEditable(false);
+        }
+    }//GEN-LAST:event_Txt_SA_Doctor_IDKeyPressed
+
+    private void Txt_SA_Doctor_AgeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_Txt_SA_Doctor_AgeKeyPressed
+        // TODO add your handling code here:
+        char c = evt.getKeyChar();
+        if(Character.isDigit(c)||Character.isISOControl(c)){
+            Txt_SA_Doctor_Age.setEditable(true);
+        }
+        else{
+            Txt_SA_Doctor_Age.setEditable(false);
+        }
+    }//GEN-LAST:event_Txt_SA_Doctor_AgeKeyPressed
+
+    private void Txt_SA_Doctor_PhoneKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_Txt_SA_Doctor_PhoneKeyPressed
+        // TODO add your handling code here:
+        char c = evt.getKeyChar();
+        if(Character.isDigit(c)||Character.isISOControl(c)){
+            Txt_SA_Doctor_Phone.setEditable(true);
+        }
+        else{
+            Txt_SA_Doctor_Phone.setEditable(false);
+        }
+    }//GEN-LAST:event_Txt_SA_Doctor_PhoneKeyPressed
+
+    private void Txt_SA_Hospital_PincodeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_Txt_SA_Hospital_PincodeKeyPressed
+        // TODO add your handling code here:
+        char c = evt.getKeyChar();
+        if(Character.isDigit(c)||Character.isISOControl(c)){
+            Txt_SA_Hospital_Pincode.setEditable(true);
+        }
+        else{
+            Txt_SA_Hospital_Pincode.setEditable(false);
+        }
+    }//GEN-LAST:event_Txt_SA_Hospital_PincodeKeyPressed
+ 
     /**
      * @param args the command line arguments
      */
@@ -4217,7 +4357,6 @@ public class HM_Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel76;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
@@ -4226,6 +4365,8 @@ public class HM_Main extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JScrollPane jScrollPane8;
+    private javax.swing.JScrollPane jScrollPane9;
+    private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
 
  public void switchpane(JPanel p){ 
