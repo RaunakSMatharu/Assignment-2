@@ -13,10 +13,27 @@ public class Individual {
    private String Individual_ID;
    private int Individual_age;
    private String Individual_Gender;
-   private String Individual_Email;
+   private String Individual_Blood_Group;
    private String Individual_City;
    private String Individual_Cell;
    private String Individual_Hospital_Visit;
+   private String Individual_Appointment;
+
+    public String getIndividual_Appointment() {
+        return Individual_Appointment;
+    }
+
+    public void setIndividual_Appointment(String Individual_Appointment) {
+        this.Individual_Appointment = Individual_Appointment;
+    }
+
+    public String getIndividual_Blood_Group() {
+        return Individual_Blood_Group;
+    }
+
+    public void setIndividual_Blood_Group(String Individual_Blood_Group) {
+        this.Individual_Blood_Group = Individual_Blood_Group;
+    }
 
     public String getIndividual_Name() {
         return Individual_Name;
@@ -50,13 +67,7 @@ public class Individual {
         this.Individual_Gender = Individual_Gender;
     }
 
-    public String getIndividual_Email() {
-        return Individual_Email;
-    }
-
-    public void setIndividual_Email(String Individual_Email) {
-        this.Individual_Email = Individual_Email;
-    }
+   
 
     public String getIndividual_City() {
         return Individual_City;
